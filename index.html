@@ -15,11 +15,22 @@
             --glass-border: rgba(255, 255, 255, 0.1);
         }
         body {
-            background-color: var(--dark-bg);
+            background-color: #1a1a1a;
             color: white;
             font-family: 'Rajdhani', sans-serif;
             overflow-x: hidden;
             margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .mobile-container {
+            width: 100%;
+            max-width: 450px;
+            min-height: 100vh;
+            background-color: var(--dark-bg);
+            position: relative;
+            box-shadow: 0 0 50px rgba(0,0,0,0.5);
+            overflow: hidden;
         }
         .font-orbitron { font-family: 'Orbitron', sans-serif; }
         
@@ -69,6 +80,8 @@
     </style>
 </head>
 <body class="relative">
+
+    <div class="mobile-container">
 
     <canvas id="canvas-particles"></canvas>
 
@@ -376,5 +389,6 @@
             window.location.href = 'https://app.pushinpay.com.br/service/pay/A333F58B-9B72-448E-8D02-EC04CD2D8B46';
         }
     </script>
+    </div>
 </body>
 </html>
